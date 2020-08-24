@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Reith";
+    src: url("./fonts/ReithSans_W_Rg.woff2") format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Reith";
+    src: url("./fonts/BBCReithSans_W_Md.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Reith";
+    src: url("./fonts/ReithSans_W_Bd.woff2") format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Reith Serif";
+    src: url("./fonts/BBCReithSerif_W_Md.woff2") format("woff2");
+    font-weight: bold;
+}
+
+.left {
+    margin-left: 48px;
+}
+
+.right {
+    float: right;
+    margin-right: 48px;
+}
+
+.carousel-container {
+    margin-top: 80px;
+    padding-bottom: 32px;
+    background-image: linear-gradient(#ffffff, #f5f5f5);
+}
+
+.privacy-container {
+    margin-top: 80px;
+    background-image: linear-gradient(#ffffff, #f5f5f5);
+}
+
+.privacy-image {
+    margin: auto;
+    max-width: 900px;
+}
+
+.privacy-image>img {
+    padding-top: 16px;
+    width: 100%;
+}
+
+.carousel {
+    margin: auto;
+    padding-right: 32px;
+    padding-left: 16px;
+    margin-top: 32px;
+    height: 369px;
+    max-width: 900px;
+}
+
+.carousel-image {
+    height: 100%;
+}
+
+.right-button {
+    position: absolute;
+    right: -21px;
+    height: 190px;
+    transform: translateY(-270px);
+}
+
+#svg-filter {
+    display: none;
+}
+
+h1 {
+    font-family: "Reith Serif";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h2 {
+    padding-top: 4px;
+    font-family: Reith;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.salutation {
+    margin: auto;
+    padding-right: 48px;
+    padding-left: 48px;
+    margin-top: 56px;
+    max-width: 900px;
+}
+
+.nav {
+    margin: auto;
+    padding-right: 48px;
+    padding-left: 48px;
+    max-width: 900px;
+    margin-top: 32px;
+    height: 21px;
+    /* background-color: brown; */
+}
+
+.nav>img {
+    float: right;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+.orb {
+    height: 40px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+    /* background-color: brown; */
+}
+
+.orb>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.grid {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    /* background-image: url(Images/sounds-swish.png), url(Images/news-globe.png); */
+    /* background-repeat: no-repeat;
+    background-position: -5% 48px, 101% 100%;
+    background-size: 22%, 28%; */
+    background-image: linear-gradient(#ffffff, #f5f5f5);
+}
+
+.grid-container-images {
+    padding: 32px;
+    filter: url(#svg-blur);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 16px;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+}
+
+.cell {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1); */
+}
+
+.row-1 {
+    padding-top: 56%;
+}
+
+.row-2 {
+    padding-top: 56%;
+}
+
+.row-3 {
+    padding-top: 56%;
+}
+
+.row-4 {
+    padding-top: 56%;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+/* Mix */
+
+.item-1 {
+    grid-column: col-start / span 6;
+    /* translate: rotateZ(20); */
+    /* transform: rotate(-1deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920xn/p087522v.jpg");
+}
+
+.item-2 {
+    grid-column: col-start 7 / span 6;
+    /* transform: rotate(1deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/1920xn/p08ljn1c.jpg");
+    object-fit: cover;
+}
+
+.item-3 {
+    grid-column: col-start / span 4;
+    /* transform: rotate(-0.6deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/640xn/p01h7sc5.jpg");
+}
+
+.item-4 {
+    grid-column: col-start 5 / span 4;
+    /* transform: rotate(0.8deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/640xn/p08mpzl2.jpg");
+}
+
+.item-5 {
+    grid-column: col-start 9 / span 4;
+    background-image: url(images/5s.jpg);
+    /* transform: rotate(1deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/640xn/p08lhpyt.jpg");
+}
+
+.item-6 {
+    grid-column: col-start / span 3;
+    background-image: url(images/6i.jpg);
+    /* transform: rotate(-1deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320xn/p08nfr67.jpg");
+}
+
+.item-7 {
+    grid-column: col-start 4 / span 3;
+    background-image: url(images/7i.jpg);
+    /* transform: rotate(0.1deg); */
+    background-image: url("Images/weather.png");
+}
+
+.item-8 {
+    grid-column: col-start 7 / span 3;
+    background-image: url(images/8s.jpg);
+    /* transform: rotate(-0.2deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320xn/p08lj2m1.jpg");
+}
+
+.item-9 {
+    grid-column: col-start 10 / span 3;
+    background-image: url(images/9i.jpg);
+    /* transform: rotate(0.5deg); */
+    background-image: url("Images/news.png");
+}
+
+
+/* row 4 */
+
+.item-10 {
+    grid-column: col-start / span 3;
+    background-image: url(images/6i.jpg);
+    /* transform: rotate(-1deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320xn/p08nndhp.jpg");
+}
+
+.item-11 {
+    grid-column: col-start 4 / span 3;
+    background-image: url(images/7i.jpg);
+    /* transform: rotate(-0.5deg); */
+    background-image: url("Images/sport.png");
+}
+
+.item-12 {
+    grid-column: col-start 7 / span 3;
+    background-image: url(images/8s.jpg);
+    /* transform: rotate(0.5deg); */
+    background-image: url("https://ichef.bbci.co.uk/images/ic/320xn/p08k39rv.jpg");
+}
+
+.item-13 {
+    grid-column: col-start 10 / span 3;
+    background-image: url(images/9i.jpg);
+    /* animation: rotate 5s infinite;
+    animation-direction: alternate-reverse; */
+    background-image: url("Images/sounds.png");
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}
